@@ -1,11 +1,11 @@
 var config = {};
 
 var localDbUri = 'mongodb://localhost:27017/bookdb';
-  
+
 config.database = {
   uri: process.env.MONGOLAB_URI || localDbUri
 };
-  
+
 config.errors = {
   database_error: {
     code: 500,
@@ -28,5 +28,5 @@ config.errors = {
     message: 'The requested resource was not found.'
   }
 }
- 
+
 module.exports = config;
