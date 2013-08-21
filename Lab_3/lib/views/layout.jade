@@ -10,7 +10,7 @@ html
     //- if it"s not passed in as variable
     - if(typeof(page) === "undefined")
       - var page = "";
-  
+
     //- navigation
     .row
       .large-12.columns
@@ -24,7 +24,7 @@ html
                 span menu
           section.top-bar-section
             ul.title-area.right
-              li.has-button 
+              li.has-button
                 - if(page === "new" || page === "edit")
                   a.small.button.alert(href="/") Cancel
                 - else if(page === "book")
@@ -36,7 +36,7 @@ html
           div.alert-box.alert #{error.message}
     //- main content
     block content
-    
+
     //- footer
     footer.row
       .large-12.columns
